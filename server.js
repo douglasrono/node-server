@@ -3,9 +3,12 @@
 var http = require('http');
 
 http.createServer(function (req, res) {
-
-  res.writeHead(200, {'Content-Type': 'text/html'});
-
-  res.end('Hello World!');
+  //Read index.html file
+  fs.readFile('index.html', function(err, data) {
+    // Write headers to the file
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
 
 }).listen(8080);
