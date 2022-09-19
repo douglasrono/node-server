@@ -1,6 +1,6 @@
 // import node_modules
 // http module helps us create a server 
-var http = require('http'),
+let http = require('http'),
       fs = require('fs);
 
 http.createServer(function (req, res) {
