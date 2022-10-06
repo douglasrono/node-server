@@ -1,11 +1,10 @@
-// import node_modules
-// http module helps us create a server 
-let http = require('http'),
+
+const http = require('http'),
       fs = require('fs);
 
-http.createServer(function (req, res) {
+http.createServer((req, res) => {
   //Read index.html file
-  fs.readFile('index.html', function(err, data) {
+  fs.readFile('index.html', (err, data) =>{
     // Write headers to the file
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
