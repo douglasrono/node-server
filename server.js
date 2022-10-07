@@ -14,5 +14,7 @@ http.createServer((req, res) => {
     res.write(resData);
     return res.end();
   });
+ server.on('connection',  () =>{
+  console.log('Connection Created!');
 
 }).listen(8080); // access the server on port 8000
