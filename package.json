@@ -1,1 +1,27 @@
-
+{
+  "name": "my node server",
+  "version": "1.0.0",
+  "description": "my node js server application",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasrono/my-node-server"
+  },
+  "keywords": [
+    "nodejs",
+    "server"
+  ],
+  "author": "douglas kiprono",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglasrono/my-node-server/issues"
+  },
+  "homepage": "https://github.com/douglasrono/my-node-server/readme.md",
+  "dependencies": {
+    
+  }
+}
