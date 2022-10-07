@@ -7,10 +7,11 @@ http.createServer((req, res) => {
     // Write headers to response 
     res.writeHead(200, {'Content-Type': 'text/html'});
     
-   //write response to the client
-    res.write("hello There!");
-    res.write("I'm from the server!");
-    res.write("GOODBYE!");
+   //Read html file
+    fs.readFile('index.html', function(err, resData) {
+   // Write html content to the response 
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(resData);
     return res.end();
   });
 
